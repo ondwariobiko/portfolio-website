@@ -311,7 +311,6 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -728,13 +727,12 @@ input[type="text"] {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
   color: #F95959;
   padding-left: 10px;
   padding-right: 10px;
