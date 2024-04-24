@@ -47,7 +47,15 @@ body:before, body:after {
     display: none;
   }
 
-
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* White background color */
+  z-index: 1000; /* Ensure the sticky nav is on top of other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
 }
 body:before {
   top: 0;
