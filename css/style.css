@@ -92,6 +92,9 @@ body:after {
   text-decoration: line-through;
   color: #cc0053;
 }
+.social-icon:hover img {
+  filter: invert(58%) sepia(51%) saturate(5377%) hue-rotate(324deg) brightness(89%) contrast(91%);
+}
 
 a {
   color: #cc0053;
