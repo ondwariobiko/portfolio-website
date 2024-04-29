@@ -33,6 +33,11 @@ body {
   border-right: 20px solid #fff;
   /* END white border*/
 }
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
 body:before, body:after {
   content: "";
   position: fixed;
