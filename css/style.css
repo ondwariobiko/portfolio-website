@@ -95,6 +95,7 @@ body:after {
 .social-icon:hover img {
   filter: invert(58%) sepia(51%) saturate(5377%) hue-rotate(324deg) brightness(89%) contrast(91%);
 }
+
 .goto-top-button:hover {
   background-color: #cc0053;
 }
