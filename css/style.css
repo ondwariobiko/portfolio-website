@@ -1383,5 +1383,9 @@ input[type="text"] {
     padding-top: 30px;
   }
 }
-
+.btn-demo:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
 /*# sourceMappingURL=style.css.map */
