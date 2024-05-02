@@ -214,12 +214,12 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-moz-selection {
   color: #fff;
-  background: #F95959;
+  background: #cc0053;
 }
 
 ::selection {
   color: #fff;
-  background: #F95959;
+  background: #cc0053;
 }
 
 .container-wrap {
@@ -445,7 +445,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 90px;
   display: table;
   text-align: center;
-  background: #fff;
+  background: #cc0053;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
   -ms-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-hero {
   min-height: 800px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  background: #cc0053 url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
   margin-bottom: 20px;
