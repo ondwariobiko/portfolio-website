@@ -280,4 +280,15 @@
 	});
 
 
+	// Get all <a> tags on the page
+const links = document.querySelectorAll('a');
+
+// Loop through each link
+links.forEach(link => {
+  // Check if the link is an external link
+  if (link.hostname !== window.location.hostname) {
+    // Add the target="_blank" attribute
+    link.setAttribute('target', '_blank');
+  }
+});
 }());
