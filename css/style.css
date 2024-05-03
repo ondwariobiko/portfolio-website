@@ -1390,5 +1390,14 @@ input[type="text"] {
   color: #ffffff !important;
   border-color: #000000 !important;
 }
+#fh5co-intro .row.animate-box .col-md-8.col-md-offset-2.col-md-pull-2.my-class {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 85;
+  padding-right: 75;
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
