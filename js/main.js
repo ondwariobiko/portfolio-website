@@ -292,3 +292,26 @@ links.forEach(link => {
   }
 });
 }());
+
+// Function to update favicon based on color scheme
+function updateFavicon() {
+    const lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+    const darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+    const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // Add or remove the appropriate favicon based on the match
+    if (matcher.matches) {
+      document.head.append(darkSchemeIcon);
+      lightSchemeIcon.remove();
+    } else {
+      document.head.append(lightSchemeIcon);
+      darkSchemeIcon.remove();
+    }
+  }
+
+  // Set up a listener for changes in color scheme
+  const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+  matcher.addListener(updateFavicon);
+
+  // Initial update
+  updateFavicon();
