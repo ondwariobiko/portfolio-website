@@ -1403,7 +1403,8 @@ video {
   border-radius: 15px; /* This will apply to all videos */
 }
 .curved-box {
-  border-radius: 15px; /* This will apply to all <li> elements with the class 'curved-box' */
+  border-radius: 15px; /* Adjust the pixel value to the desired curvature */
+    background-clip: padding-box; /* Ensures the background extends to the edges */
 }
 .portfolio-grid {
   border-radius: 15px; /* This will apply to all elements with the class 'portfolio-grid' */
