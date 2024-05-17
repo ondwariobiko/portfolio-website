@@ -1409,6 +1409,9 @@ video {
   border-radius: 15px; /* This will apply to all elements with the class 'portfolio-grid' */
   overflow: hidden; /* Ensures content within the box also has rounded corners */
 }
+.btn {
+  border-radius: 10px; /* Adjust the pixel value to the desired curvature */
+}
 
 
 
