@@ -1403,8 +1403,10 @@ video {
   border-radius: 15px; /* This will apply to all videos */
 }
 .curved-box {
-  border-radius: 15px; /* Adjust the pixel value to the desired curvature */
-    background-clip: padding-box; /* Ensures the background extends to the edges */
+  border-radius: 15px;
+  background-clip: padding-box;
+  background-color: rgba(204, 0, 83, 0.8); /* Adjust the alpha value as needed */
+  border: 1px solid transparent;
 }
 .portfolio-grid {
   border-radius: 15px; /* This will apply to all elements with the class 'portfolio-grid' */
@@ -1412,6 +1414,9 @@ video {
 }
 .btn {
   border-radius: 10px; /* Adjust the pixel value to the desired curvature */
+}
+.overlay {
+  border-radius: 15px; /* Match the border-radius of the .curved-box */
 }
 
 
