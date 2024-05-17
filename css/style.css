@@ -1396,6 +1396,12 @@ input[type="text"] {
   padding-left: 85;
   padding-right: 75;
 }
+.img-responsive.full-width {
+  border-radius: 15px; /* This will apply to all images with the 'img-responsive full-width' class */
+}
+video {
+  border-radius: 15px; /* This will apply to all videos */
+}
 
 
 
