@@ -1402,6 +1402,13 @@ input[type="text"] {
 video {
   border-radius: 15px; /* This will apply to all videos */
 }
+.curved-box {
+  border-radius: 15px; /* This will apply to all <li> elements with the class 'curved-box' */
+}
+.portfolio-grid {
+  border-radius: 15px; /* This will apply to all elements with the class 'portfolio-grid' */
+  overflow: hidden; /* Ensures content within the box also has rounded corners */
+}
 
 
 
