@@ -1421,6 +1421,21 @@ video {
 .image-item img {
   border-radius: 15px; /* Adjust this value to get the desired curvature */
 }
+h3 {
+  line-height: 1.5; /* Adjust this value as needed */
+}
+.btn-demo {
+  width: 150px;  /* Adjust as needed */
+  height: 50px;  /* Adjust as needed */
+  font-size: 20px;  /* Adjust as needed */
+}
+.col-md-12 h2,
+    .col-md-12 h3,
+    .col-md-12 p {
+        margin-bottom: 25px;  /* Adjust as needed */
+    }
+
+
 
 
 
