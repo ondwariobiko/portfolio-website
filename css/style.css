@@ -1463,6 +1463,20 @@ h3 {
 .custom-paragraph {
   margin-bottom: 0; /* or any other value you prefer */
 }
+.project-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.previous-project, .next-project {
+  color: #000000; /* Adjust as needed */
+  text-decoration: none;
+}
+
+.previous-project:hover, .next-project:hover {
+  color: #cc0053; /* Adjust as needed */
+}
 
 
 
