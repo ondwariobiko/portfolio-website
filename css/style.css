@@ -1436,7 +1436,9 @@ h3 {
 .col-md-12 p {
   margin-bottom: 25px;  /* Adjust as needed */
 }
-
+.rounded-corners {
+  border-radius: 20px;  /* Adjust as needed */
+}
 
 
 
