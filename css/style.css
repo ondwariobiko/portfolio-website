@@ -1460,9 +1460,9 @@ h3 {
 .container {
   padding-top: 0; /* Adjust this value as needed */
 }
-
-
-
+.custom-paragraph {
+  margin-bottom: 0.5rem; /* Adjust this value to increase or decrease the space */
+}
 
 
 
