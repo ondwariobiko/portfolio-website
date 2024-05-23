@@ -321,5 +321,9 @@ function updateFavicon() {
   const matcher = window.matchMedia('(prefers-color-scheme: dark)');
   matcher.addListener(updateFavicon);
 
+  window.onload = function() {
+	// Once the page is fully loaded, fade out the preloader
+	document.querySelector('.preloader').style.opacity = '0';
+};
   // Initial update
   updateFavicon();
