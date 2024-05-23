@@ -1450,5 +1450,7 @@ h3 {
 .spacer {
   height: 20px; /* Adjust as needed */
 }
-
+.bold {
+  font-weight:600; /* Adjust as needed */
+}
 /*# sourceMappingURL=style.css.map */
