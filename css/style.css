@@ -1442,7 +1442,11 @@ h3 {
 .specific-h2 {
   margin-bottom: 0.1px;  /* Adjust as needed */
 }
-
+.icon {
+	width: 20px; /* Adjust as needed */
+	height: 20px; /* Adjust as needed */
+	margin-right: 10px; /* Space between the icon and the text */
+}
 
 
 /*# sourceMappingURL=style.css.map */
