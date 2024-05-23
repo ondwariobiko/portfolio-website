@@ -1440,13 +1440,15 @@ h3 {
   border-radius: 20px;  /* Adjust as needed */
 }
 .specific-h2 {
-  margin-bottom: 0.1px;  /* Adjust as needed */
+  margin-bottom: 50px;  /* Adjust as needed */
 }
 .icon {
 	width: 20px; /* Adjust as needed */
 	height: 20px; /* Adjust as needed */
 	margin-right: 10px; /* Space between the icon and the text */
 }
-
+.spacer {
+  height: 20px; /* Adjust as needed */
+}
 
 /*# sourceMappingURL=style.css.map */
