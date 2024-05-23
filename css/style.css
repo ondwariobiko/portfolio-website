@@ -1418,7 +1418,9 @@ video {
 .overlay {
   border-radius: 15px; /* Match the border-radius of the .curved-box */
 }
-
+.image-item img {
+  border-radius: 15px; /* Adjust this value to get the desired curvature */
+}
 
 
 
