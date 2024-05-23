@@ -1429,11 +1429,13 @@ h3 {
   height: 50px;  /* Adjust as needed */
   font-size: 20px;  /* Adjust as needed */
 }
-.col-md-12 h2,
-    .col-md-12 h3,
-    .col-md-12 p {
-        margin-bottom: 25px;  /* Adjust as needed */
-    }
+.col-md-12 h2 {
+  margin-bottom: 10px;  /* Adjust as needed */
+}
+.col-md-12 h3,
+.col-md-12 p {
+  margin-bottom: 25px;  /* Adjust as needed */
+}
 
 
 
