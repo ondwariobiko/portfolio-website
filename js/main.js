@@ -309,6 +309,14 @@ function updateFavicon() {
     }
   }
 
+
+  window.onload = function() {
+    document.querySelectorAll('.image-item img').forEach(function(img) {
+        img.oncontextmenu = function(e) {
+            e.preventDefault();
+        };
+    });
+};
   // Set up a listener for changes in color scheme
   const matcher = window.matchMedia('(prefers-color-scheme: dark)');
   matcher.addListener(updateFavicon);
