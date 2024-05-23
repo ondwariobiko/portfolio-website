@@ -1439,8 +1439,13 @@ h3 {
 .rounded-corners {
   border-radius: 20px;  /* Adjust as needed */
 }
-
-
+.specific-h2 {
+  margin-bottom: 0.1px;  /* Adjust as needed */
+}
+.contact-info {
+  font-size: 30px;
+  margin-bottom: 10px;  /* Adjust as needed */
+}
 
 
 /*# sourceMappingURL=style.css.map */
