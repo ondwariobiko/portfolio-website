@@ -1461,9 +1461,8 @@ h3 {
   padding-top: 0; /* Adjust this value as needed */
 }
 .custom-paragraph {
-  margin-bottom: 0.5rem; /* Adjust this value to increase or decrease the space */
+  margin-bottom: 0; /* or any other value you prefer */
 }
-
 
 
 
