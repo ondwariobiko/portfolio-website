@@ -324,3 +324,4 @@ function updateFavicon() {
  
   // Initial update
   updateFavicon();
+
