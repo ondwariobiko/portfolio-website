@@ -1477,10 +1477,46 @@ h3 {
 .previous-project:hover, .next-project:hover {
   color: #cc0053; /* Adjust as needed */
 }
+.client-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust this value to add space between logos */
+}
+.client-logos img {
+  max-width: 100px; /* Adjust this value to resize logos */
+}
+#fh5co-footer {
+  background-color: #cc0053; /* Replace with your desired color */
+  border-top-left-radius: 50px; /* Adjust the radius as needed */
+  border-top-right-radius: 50px; /* Adjust the radius as needed */
+}
+#fh5co-footer {
+  background-color: #cc0053;
+  color: white;
+}
 
+#fh5co-footer a {
+  color: white;
+}
 
+.fh5co-social-icons a img {
+  filter: brightness(0) invert(1);
+}
 
-
+#fh5co-footer .fh5co-widget h4,
+#fh5co-footer .fh5co-widget p,
+#fh5co-footer .col-md-push-1 h4,
+#fh5co-footer .copyright .block,
+#fh5co-footer .fh5co-footer-links li a,
+#fh5co-footer .col-md-3 h4 { /* Add this line */
+    color: white;
+}
+#fh5co-footer .copyright .block a[href="https://www.namecheap.com/"] {
+  color: rgb(255, 255, 255);
+}
+#fh5co-footer .copyright .block a[href="https://www.namecheap.com/"]:hover {
+  text-decoration: underline;
+}
 
 
 /*# sourceMappingURL=style.css.map */
