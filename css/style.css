@@ -1517,7 +1517,10 @@ h3 {
   border-radius: 15px;
 }
 .spaced-image {
-  margin-bottom: 30px; /* Adjust this value to increase or decrease the space */
+  margin-bottom: 20px; /* Adjust this value to increase or decrease the space */
+}
+video {
+  border-radius: 15px;
 }
 
 
