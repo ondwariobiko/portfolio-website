@@ -1510,7 +1510,9 @@ h3 {
   text-decoration: underline; /* Adds underline when hovered */
   color: black; /* Changes color to black when hovered */
 }
-
+.menu-1 ul li a:hover {
+  color: #cc0053;
+}
 
 #fh5co-footer .fh5co-widget h4,
 #fh5co-footer .fh5co-widget p,
