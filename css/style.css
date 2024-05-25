@@ -1513,6 +1513,26 @@ h3 {
 .menu-1 ul li a:hover {
   color: #cc0053;
 }
+.curved-image {
+  border-radius: 15px;
+}
+.spaced-image {
+  margin-bottom: 30px; /* Adjust this value to increase or decrease the space */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #fh5co-footer .fh5co-widget h4,
 #fh5co-footer .fh5co-widget p,
