@@ -1501,6 +1501,15 @@ h3 {
 .custom-paragraph {
   margin-bottom: 0px; /* Adjust this value as needed */
 }
+#fh5co-intro a {
+  text-decoration: none; /* Removes the default underline */
+  color: #cc0053; /* Makes the link color the same as the text color */
+}
+
+#fh5co-intro a:hover {
+  text-decoration: underline; /* Adds underline when hovered */
+  color: black; /* Changes color to black when hovered */
+}
 
 
 #fh5co-footer .fh5co-widget h4,
