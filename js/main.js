@@ -279,7 +279,19 @@
 		stickyFunction();
 	});
 
-
+	$(document).ready(function(){
+        $('.testimonial-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>'
+        });
+    });
 	// Get all <a> tags on the page
 const links = document.querySelectorAll('a');
 
