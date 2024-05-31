@@ -1413,7 +1413,7 @@ video {
   overflow: hidden; /* Ensures content within the box also has rounded corners */
 }
 .btn {
-  border-radius: 50px; /* Adjust the pixel value to the desired curvature */
+  border-radius: 15px; /* Adjust the pixel value to the desired curvature */
 }
 .overlay {
   border-radius: 15px; /* Match the border-radius of the .curved-box */
