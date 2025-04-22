@@ -346,5 +346,4 @@ $(window).scroll(function() {
         $('.fh5co-nav').removeClass('sticky');
         $('body').removeClass('sticky-nav');
     }
-});
- 
+}); 
