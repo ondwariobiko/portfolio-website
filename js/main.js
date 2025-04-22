@@ -337,4 +337,14 @@ function updateFavicon() {
   // Initial update
   updateFavicon();
 
-  
+// Sticky Navbar
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) { // Adjust this value based on when you want the sticky effect to trigger
+        $('.fh5co-nav').addClass('sticky');
+        $('body').addClass('sticky-nav');
+    } else {
+        $('.fh5co-nav').removeClass('sticky');
+        $('body').removeClass('sticky-nav');
+    }
+});
+ 
