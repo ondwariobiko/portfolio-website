@@ -30,82 +30,74 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	
 	<style>
-		/* Privacy Content Only Styles */
-		.privacy-content {
-			padding: 60px 0;
-		}
+		/* Additional styles just for this page */
 		.policy-header {
 			text-align: center;
 			margin-bottom: 50px;
+			padding-bottom: 20px;
+			border-bottom: 2px solid #f0f0f0;
 		}
-		.policy-header h1 {
-			color: #000;
-			margin-bottom: 15px;
-		}
-		.last-updated {
-			color: #767676;
-			font-style: italic;
-			margin-bottom: 30px;
-			display: block;
-		}
+		
 		.policy-section {
-			background: #fff;
+			background: white;
 			padding: 30px;
 			border-radius: 15px;
 			margin-bottom: 30px;
 			box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
+		
+		.policy-section:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+		}
+		
 		.policy-section h3 {
 			color: #cc0053;
 			margin-top: 0;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #f0f0f0;
 			font-weight: 600;
 		}
-		.policy-section h3 i {
-			margin-right: 10px;
-		}
+		
 		.policy-section ul {
 			padding-left: 20px;
-			list-style: none;
 		}
+		
 		.policy-section li {
 			margin-bottom: 10px;
 			position: relative;
 			padding-left: 25px;
 		}
+		
 		.policy-section li:before {
 			content: "•";
 			color: #cc0053;
 			font-size: 20px;
 			position: absolute;
 			left: 0;
+			top: -2px;
 		}
-		.privacy-note {
-			margin-top: 15px;
-			font-style: italic;
-			color: #666;
-		}
-		.third-party-note {
-			background: #f9f9f9;
-			padding: 15px;
+		
+		.last-updated {
+			background: #f8f8f8;
+			padding: 10px 15px;
 			border-radius: 5px;
-			margin-top: 15px;
+			display: inline-block;
+			margin-bottom: 30px;
+			font-style: italic;
 		}
+		
 		.contact-highlight {
 			background: #f8f8f8;
-			padding: 30px;
-			border-radius: 15px;
+			padding: 20px;
+			border-radius: 10px;
 			text-align: center;
 			margin-top: 40px;
 			border-left: 4px solid #cc0053;
 		}
-		.contact-highlight h4 {
-			color: #cc0053;
-			margin-top: 0;
-		}
+		
 		@media (max-width: 768px) {
-			.privacy-content {
-				padding: 30px 0;
-			}
 			.policy-section {
 				padding: 20px;
 			}
@@ -118,7 +110,6 @@
 	<div class="preloader"></div>
 	
 	<div id="page">
-	<!-- Your Existing Navigation - Completely Untouched -->
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="top-menu">
@@ -144,91 +135,94 @@
 		</div>
 	</nav>
 
-	<!-- Privacy Content Section Only -->
-	<div class="container privacy-content">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="policy-header">
-					<h1 class="bold">Privacy Policy</h1>
-					<span class="last-updated">Last Updated: April 2025</span>
-					<p>Your privacy is important to me. This policy explains how I collect, use, and protect your information.</p>
-				</div>
-				
-				<div class="policy-section">
-					<h3><i class="icon-shield"></i> 1. Information Collection</h3>
-					<p>I believe in minimal data collection. Here's what I gather when you interact with my website:</p>
-					<ul>
-						<li>Direct Contact: When you email me at ondwariobiko@gmail.com or use my contact form</li>
-						<li>Website Usage: Basic analytics through cookies to improve your experience</li>
-						<li>Service Inquiries: Only what's necessary to respond to your design requests</li>
-					</ul>
-				</div>
-				
-				<div class="policy-section">
-					<h3><i class="icon-gears"></i> 2. Use of Information</h3>
-					<p>Every piece of information has a clear purpose:</p>
-					<ul>
-						<li>Communication: To respond to your inquiries and discuss potential projects</li>
-						<li>Improvement: Analyzing website usage to enhance your browsing experience</li>
-						<li>Updates: Occasional newsletters (only if you explicitly opt-in)</li>
-					</ul>
-					<p class="privacy-note">I never sell or share your data with third parties for marketing purposes.</p>
-				</div>
-				
-				<div class="policy-section">
-					<h3><i class="icon-lock"></i> 3. Data Protection</h3>
-					<p>Your data's security is my priority. I implement:</p>
-					<ul>
-						<li>Encryption: Secure HTTPS connections throughout the website</li>
-						<li>Access Control: Strict limitations on who can access your information</li>
-						<li>Regular Audits: Keeping systems updated against vulnerabilities</li>
-						<li>Minimal Retention: Only keeping data as long as necessary</li>
-					</ul>
-				</div>
-				
-				<div class="policy-section">
-					<h3><i class="icon-users"></i> 4. Third-Party Services</h3>
-					<p>For optimal functionality, I use these trusted services:</p>
-					<ul>
-						<li>Google Analytics: Helps understand how visitors use my site</li>
-						<li>Social Platforms: Behance integration to showcase my work</li>
-						<li>Email Services: For professional communication</li>
-					</ul>
-					<div class="third-party-note">
-						<p>Each service maintains its own privacy standards. I carefully select partners who respect user privacy.</p>
+	<div class="container">
+		<div id="fh5co-intro">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="policy-header">
+						<h1 class="bold" style="margin-bottom: 15px;">Privacy Policy</h1>
+						<p class="last-updated">Last Updated: April 2025</p>
+						<p>Your privacy is important to me. This policy explains how I collect, use, and protect your information.</p>
 					</div>
-				</div>
-				
-				<div class="policy-section">
-					<h3><i class="icon-hand-right"></i> 5. Your Rights</h3>
-					<p>You're in control of your data. You can:</p>
-					<ul>
-						<li>Request access to your personal information</li>
-						<li>Ask for corrections or deletion</li>
-						<li>Withdraw consent for data processing</li>
-						<li>Lodge complaints with data protection authorities</li>
-					</ul>
-				</div>
-				
-				<div class="policy-section">
-					<h3><i class="icon-loop2"></i> 6. Policy Updates</h3>
-					<p>This policy may evolve to reflect changes in regulations or my services. Significant updates will be clearly communicated.</p>
-					<p>I recommend checking this page periodically for the latest information.</p>
-				</div>
-				
-				<div class="contact-highlight">
-					<h4>Questions About Your Privacy?</h4>
-					<p>I'm happy to discuss any concerns or requests regarding your personal data.</p>
-					<a href="mailto:ondwariobiko@gmail.com" class="btn btn-primary">Contact Me</a>
+					
+					<div class="policy-section">
+						<h3><i class="icon-shield"></i> 1. Information Collection</h3>
+						<p>I believe in minimal data collection. Here's what I gather when you interact with my website:</p>
+						<ul>
+							<li><strong>Direct Contact:</strong> When you email me at ondwariobiko@gmail.com or use my contact form</li>
+							<li><strong>Website Usage:</strong> Basic analytics through cookies to improve your experience</li>
+							<li><strong>Service Inquiries:</strong> Only what's necessary to respond to your design requests</li>
+						</ul>
+					</div>
+					
+					<div class="policy-section">
+						<h3><i class="icon-gears"></i> 2. Use of Information</h3>
+						<p>Every piece of information has a clear purpose:</p>
+						<ul>
+							<li><strong>Communication:</strong> To respond to your inquiries and discuss potential projects</li>
+							<li><strong>Improvement:</strong> Analyzing website usage to enhance your browsing experience</li>
+							<li><strong>Updates:</strong> Occasional newsletters (only if you explicitly opt-in)</li>
+						</ul>
+						<p style="margin-top: 15px; font-style: italic;">I never sell or share your data with third parties for marketing purposes.</p>
+					</div>
+					
+					<div class="policy-section">
+						<h3><i class="icon-lock"></i> 3. Data Protection</h3>
+						<p>Your data's security is my priority. I implement:</p>
+						<ul>
+							<li><strong>Encryption:</strong> Secure HTTPS connections throughout the website</li>
+							<li><strong>Access Control:</strong> Strict limitations on who can access your information</li>
+							<li><strong>Regular Audits:</strong> Keeping systems updated against vulnerabilities</li>
+							<li><strong>Minimal Retention:</strong> Only keeping data as long as necessary</li>
+						</ul>
+					</div>
+					
+					<div class="policy-section">
+						<h3><i class="icon-users"></i> 4. Third-Party Services</h3>
+						<p>For optimal functionality, I use these trusted services:</p>
+						<ul>
+							<li><strong>Google Analytics:</strong> Helps understand how visitors use my site</li>
+							<li><strong>Social Platforms:</strong> Behance integration to showcase my work</li>
+							<li><strong>Email Services:</strong> For professional communication</li>
+						</ul>
+						<div style="background: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 15px;">
+							<p style="margin-bottom: 0;">Each service maintains its own privacy standards. I carefully select partners who respect user privacy.</p>
+						</div>
+					</div>
+					
+					<div class="policy-section">
+						<h3><i class="icon-hand-right"></i> 5. Your Rights</h3>
+						<p>You're in control of your data. You can:</p>
+						<ul>
+							<li><strong>Access:</strong> Request a copy of your personal information</li>
+							<li><strong>Correct:</strong> Ask me to update inaccurate details</li>
+							<li><strong>Delete:</strong> Request removal of your data from my systems</li>
+							<li><strong>Object:</strong> Opt-out of specific data processing</li>
+							<li><strong>Complain:</strong> Contact data protection authorities if needed</li>
+						</ul>
+					</div>
+					
+					<div class="policy-section" style="margin-bottom: 20px;">
+						<h3><i class="icon-loop2"></i> 6. Policy Updates</h3>
+						<p>This policy may evolve to reflect changes in regulations or my services. Significant updates will be clearly communicated.</p>
+						<p>I recommend checking this page periodically for the latest information.</p>
+					</div>
+					
+					<div class="contact-highlight">
+						<h4 style="margin-top: 0; color: #cc0053;">Questions About Your Privacy?</h4>
+						<p>I'm happy to discuss any concerns or requests regarding your personal data.</p>
+						<a href="mailto:ondwariobiko@gmail.com" class="btn btn-primary" style="margin-top: 10px;">Contact Me</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Your Existing Footer - Completely Untouched -->
+	<!-- Start of the full-width footer -->
 	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
+		<div class="container"> <!-- Add a new container inside the footer -->
 			<div class="row">
+				<!-- Your footer content here -->
 				<div class="col-md-3 fh5co-widget">
 					<img src="images/my logo for footer-01.png" alt="Ondwariobiko Logo" style="width: 150px; height: auto; display: block; margin-top: -53px; margin-bottom: 0px;">
 					<p>Crafting captivating logo & brand identities. Connect for impactful branding collaborations.</p>
@@ -242,6 +236,7 @@
 						<li><a href="denkzono.html">Denkzono apparel</a></li>
 					</ul>
 				</div>
+
 				<div class="col-md-3 col-md-push-1">
 					<h4>Links</h4>
 					<ul class="fh5co-footer-links">
@@ -252,30 +247,36 @@
 						<li><a href="privacy.html">Privacy policy</a></li>
 					</ul>
 				</div>
+
 				<div class="col-md-3">
 					<h4>Contact Information</h4>
 					<ul class="fh5co-footer-links">
 						<li>Kisauni Road, Suite 721</li>
 						<li>Nairobi, KENYA</li>
-						<li><a href="tel://+254 702 255575">+254 702 255575</a></li>
-						<li><a href="mailto:ondwariobiko@gmail.com">ondwariobiko@gmail.com</a></li>
+						<li><a href="tel://+254 702 255575" target="_blank">+254 702 255575</a></li>
+						<li><a href="mailto:ondwariobiko@gmail.com" target="_blank">ondwariobiko@gmail.com</a></li>
 					</ul>
 				</div>
+
 			</div>
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-					<p><small class="block">&copy; 2025 ondwariobiko.</small></p>
-					<ul class="fh5co-social-icons">
-						<li><a href="http://www.linkedin.com/in/ondwariobiko" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
-						<li><a href="mailto:ondwariobiko@gmail.com" target="_blank"><img src="images/mail.png" alt="mail"></a></li>
-						<li><a href="https://www.behance.net/johnobiko" target="_blank"><img src="images/Behance.png" alt="Behance"></a></li>
-						<li><a href="https://wa.me/+254702255575" target="_blank"><img src="images/whatsapp.png" alt="whatsapp"></a></li>
-					</ul>
+					<p>
+						<p><small class="block">&copy; 2025 ondwariobiko.</small></p>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a class="social-icon" href="http://www.linkedin.com/in/ondwariobiko" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
+							<li><a class="social-icon" href="mailto:design@ondwariobiko.com" target="_blank"><img src="images/mail.png" alt="mail"></a></li>
+							<li><a class="social-icon" href="https://www.behance.net/johnobiko" target="_blank"><img src="images/Behance.png" alt="Behance"></a></li>
+							<li><a class="social-icon" href="https://wa.me/+254702255575" target="_blank"><img src="images/whatsapp.png" alt="whatsapp"></a></li>
+						</ul>
+					  </p>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	</div><!-- END container -->
 	</div>
 
 	<div class="gototop js-top">
@@ -288,13 +289,32 @@
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Sticky Kit -->
-	<script src="js/sticky-kit.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+		// Ensure the back-to-top button works
+		$(document).ready(function(){
+			// Back to top button
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 200) {
+					$('.js-top').addClass('active');
+				} else {
+					$('.js-top').removeClass('active');
+				}
+			});
+			
+			$('.js-gotop').on('click', function(event){
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: 0
+				}, 500, 'easeInOutExpo');
+				return false;
+			});
+		});
+	</script>
+
 	</body>
 </html>
