@@ -1,25 +1,68 @@
 @font-face {
-  @font-face {
-    font-family: 'Poppins';
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-    font-weight: normal;
-    font-style: normal;
-  }
-       font-weight: 400;
-       font-style: normal;
-}
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 
-*
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), 
+       url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), 
+       url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), 
+       url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==================== IMPROVEMENTS ADDED ==================== */
+/* Consolidated Poppins classes (no functional change) */
+.poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal; }
+.poppins-medium { font-family: "Poppins", sans-serif; font-weight: 500; font-style: normal; }
+.poppins-semibold { font-family: "Poppins", sans-serif; font-weight: 600; font-style: normal; }
+.poppins-bold { font-family: "Poppins", sans-serif; font-weight: 700; font-style: normal; }
+.poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; font-style: normal; }
+.poppins-black { font-family: "Poppins", sans-serif; font-weight: 900; font-style: normal; }
+.poppins-regular-italic { font-family: "Poppins", sans-serif; font-weight: 400; font-style: italic; }
+.poppins-medium-italic { font-family: "Poppins", sans-serif; font-weight: 500; font-style: italic; }
+.poppins-semibold-italic { font-family: "Poppins", sans-serif; font-weight: 600; font-style: italic; }
+.poppins-bold-italic { font-family: "Poppins", sans-serif; font-weight: 700; font-style: italic; }
+.poppins-extrabold-italic { font-family: "Poppins", sans-serif; font-weight: 800; font-style: italic; }
+.poppins-black-italic { font-family: "Poppins", sans-serif; font-weight: 900; font-style: italic; }
+
+/* Enhanced base styles (original preserved, only transitions added) */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #767676;
+  background: rgba(232, 232, 232, 0.6);
+  border-left: 20px solid #fff;
+  border-right: 20px solid #fff;
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease, background 0.3s ease; /* Added */
+}
+
+/* Improved footer hover states (original colors preserved) */
+#fh5co-footer a {
+  transition: opacity 0.3s ease; /* Added */
+}
+#fh5co-footer a:hover {
+  opacity: 0.8; /* Added */
+}
+
+/* Smoother buttons (existing styles preserved) */
+.btn {
+  transition: all 0.3s ease !important; /* Enhanced */
+}
+/* ==================== END IMPROVEMENTS ==================== */
+
+/* ======================================================= *
+*  
+*  [ALL YOUR ORIGINAL CSS REMAINS BELOW THIS LINE]  
+*  
 * ======================================================= */
 .poppins-regular {
   font-family: "Poppins", sans-serif;
